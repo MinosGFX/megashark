@@ -43,7 +43,7 @@ class ShowtimesController extends AppController
         ]);
 
         $this->set('showtime', $showtime);
-        $this->set('_serialize', ['showtime']);
+        $this->set('_secomposerialize', ['showtime']);
     }
 
     /**
