@@ -46,8 +46,6 @@
                 echo $value->movie->name;
         }
     ?>   
-    
-    
     <table>
         <tr>
             <th>Lundi</th>
@@ -58,7 +56,5 @@
             <th>Samedi</th>
             <th>Dimanche</th>
         </tr>
-        
-        
     </table>
 </div>
