@@ -40,16 +40,25 @@
         </tr>
     </table>
     
-    <div class="tab_showtimes">    
-    <?php
-        foreach ($Showtimes as $value) {
-                echo ('Id du film : '.$value->movie->name.'<br>');
-                echo ('Début du film : '.$value->start->format('H:i').'<br>');
-                $finAdd = $value->movie->duration / 60;
-                $fin = $value->start->format('H:i') + $finAdd;
-                $echo ('Fin du film :'.$fin);
-                echo ('<br>');
+    <?php       
+             
+        foreach($Tabjour as $value){
+                echo $value->movie->name;
         }
-    ?>
-    </div> 
+    ?>   
+    
+    
+    <table>
+        <tr>
+            <th>Lundi</th>
+            <th>Mardi</th>
+            <th>Mercredi</th>
+            <th>Jeudi</th>
+            <th>Vendredi</th>
+            <th>Samedi</th>
+            <th>Dimanche</th>
+        </tr>
+        
+        
+    </table>
 </div>
